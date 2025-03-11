@@ -7,5 +7,3 @@ class ContactU(models.Model):
     emaill= models.CharField(max_length=255)
     message= models.TextField(max_length=255)
 
-class mail(models.Model):
-    email2= models.TextField(max_length=255)

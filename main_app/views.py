@@ -34,14 +34,17 @@ def index_page(request):
        
     
     if request.method == 'POST':
-       email2 = request.POST.get('email2')
+        
+        email2 = request.POST.get('email2')
        
-       send_mail('Drive In Mail',
-        f"email:- {email2}",
-        settings.EMAIL_HOST_USER,
-        ['kunaladwani1456@gmail.com'], 
-        fail_silently=False)
-       
+        
+
+        send_mail('Drive In Mail',
+            f"email:- {email2}",
+            settings.EMAIL_HOST_USER,
+            ['kunaladwani1456@gmail.com'], 
+            fail_silently=False)
+        
        
     
 
