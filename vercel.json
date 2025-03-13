@@ -6,6 +6,10 @@
     }],
     "routes": [
         {
+            "src": "/static/(.*)",
+            "dest": "main_app/static/$1"
+        },
+        {
             "src": "/(.*)",
             "dest": "CyberSpy/wsgi.py"
         }
