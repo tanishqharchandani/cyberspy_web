@@ -2,7 +2,7 @@ from django.shortcuts import redirect, render
 from django.core.mail import send_mail
 from django.conf import settings
 
-from main_app.models import ContactU
+
 
 
 # Create your views here.
@@ -17,12 +17,7 @@ def index_page(request):
        emaill = request.POST.get('emaill')
 
 
-       ContactU.objects.create(
-            first_name=first_name,
-            emaill=emaill,
-            last_name=last_name,
-            message=message,
-        )
+       
 
 
        send_mail('Contact Form',
