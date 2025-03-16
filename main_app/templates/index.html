@@ -68,8 +68,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#target-market">Target Market</a>
                         </li>
-                        
-                        
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
@@ -99,6 +97,7 @@
     <main data-bs-spy="scroll" data-bs-target="#d2c_main_nav" class="position-relative">
         <!-- Hero Section Start -->
         <section class="d2c_hero_wrapper" id="home">
+            
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-md col-lg-6 order-1 order-lg-0 wow fadeInLeft">
@@ -117,10 +116,16 @@
                     </div>
                 </div>
             </div>
+
+            
+            
         </section>
         <!-- Hero Section End -->
 
+        
+
         <!-- About Section Start -->
+        
         <section class="d2c_about_wrapper" id="about">
             <div class="container">
                 <div class="row align-items-center">
@@ -142,7 +147,9 @@
             </div>
         </section>
         <!-- About Section End -->
-
+         
+        
+        
         <!-- Services Section Start -->
         <section class="d2c_services_wrapper" id="problems-we-solve">
             <div class="container">
@@ -310,8 +317,53 @@
                 </div>
             </section>
             <!-- Testimonial Section End -->
+            
+
+            
+
+            <div class="container-xxl py-5" id="download">
+                <div class="row fullscreen d-flex align-items-center justify-content-between" style="height: 730px;">
+                    
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <h2 style="font-size: 50px; color: azure;">
+                            Download
+                            <br>
+                        </h2>
+                        <h2 style="font-size: 70px;">
+                            CyberSpy <br> 
+                        </h2>
+                        <h1 style="font-size: 50px;">
+                            Track. Analyse. Protect.
+                            <br><br>
+                        </h1>
+                        
+                        <!-- From Uiverse.io by Yaya12085 --> 
+                        <a class="playstore-button"  href="https://play.google.com/" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512" width='51px' height='40px'>
+                            <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z" ></path>
+                            </svg>
+                            <span class="texts">
+                            <span class="text-1">GET IT ON<br></span>
+                            <span class="text-2">Google Play</span>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="banner-img col-lg-4 col-md-6 wow fadeInDown">
+                        <img class="img-fluid" src="{% static 'assets/images/banner-img.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
+        
+        
+        
+
+
+        
         <!-- Contact Section Start -->
         <section class="d2c_contact_wrapper" id="contact">
             <div class="container">
@@ -362,10 +414,15 @@
                     <div class="col-md-6 col-lg-4 mb-4 mb-md-0 wow fadeInLeft">
                         <div class="d2c_footer_card">
                             <a href="{% url 'index_page'%}"><img src="{% static 'assets/images/logo.png' %}" width='44px' height='45px' alt="Footer Logo"></a>
-                            <p class="mb-0">CyberSpy - Track. Analyse. Protect.
- 
-                            </p>
+                            <p class="mb-0">CyberSpy - Track. Analyse. Protect.<br><br></p>
+                            <ul class="list-group list-group-horizontal">
+                                <li>
+                                    <a href="https://play.google.com/" target="_blank"><i class="fab fa-google-play d2c_icon"></i>Download Now</a>
+                                </li>
+                                
+                            </ul>
                         </div>
+                        
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeInUp">
                         <div class="d2c_footer_card">
@@ -417,14 +474,13 @@
                     <div class="col-md-6 mb-3 mb-md-0">
                         <p class="mb-0 text-center text-md-start">&copy;2025 <a href="" target="_blank">CyberSpy</a>. All Right Reserved</p>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
-                        
-                    </div>
                 </div>
             </div>
         </div>
         <!-- Copy Right Section End -->
         
+        
+
         <!-- Scroll Button Start -->
         <div id="scrollBtn">
             <a href="#">
@@ -447,6 +503,18 @@
     <script src="{% static 'lib/slick-1.8.1/slick/slick.min.js' %}"></script>
     <!-- Main JS Link -->
     <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
 
